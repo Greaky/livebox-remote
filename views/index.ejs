@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title><%= title %></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel='stylesheet' href='/css/style.css' />
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <div class="app" id="app">
+                <article class="content forms-page">
+                    <section class="section">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6 col-12">
+
+                                <div id="remote-tv" class="card border-bottom-round">
+
+
+                                    <div class="card-header">
+                                        <div class="header-block">
+                                            <h3 class="title">
+                                                <i class="fa fa-television"></i>&nbsp;&nbsp;TV
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <div class="row text-right">
+                                            <div class="round bg-white pointer mr-0 text-danger" onclick="setCommande(this,116);">
+                                                <i class="fa fa-power-off"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="row no-margin text-center">
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-3">
+                                                <div class="round pointer mr-0" onclick="setCommande(this,513);">1</div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-3">
+                                                <div class="round pointer" onclick="setCommande(this,514);">2</div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-3">
+                                                <div class="round pointer ml-0" onclick="setCommande(this,515);">3</div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-3">
+                                                <div class="round pointer mr-0" onclick="setCommande(this,516);">4</div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-3">
+                                                <div class="round pointer" onclick="setCommande(this,517);">5</div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-3">
+                                                <div class="round pointer ml-0" onclick="setCommande(this,518);">6</div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-3">
+                                                <div class="round pointer mr-0" onclick="setCommande(this,519);">7</div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-3">
+                                                <div class="round pointer" onclick="setCommande(this,520);">8</div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-3">
+                                                <div class="round pointer ml-0" onclick="setCommande(this,521);">9</div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-3">
+                                                <div class="round pointer mr-0" onclick="setCommande(this,158);"><i class="fa fa-reply"></i></div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-3">
+                                                <div class="round pointer" onclick="setCommande(this,512);">0</div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-4 mb-3">
+                                                <div class="round pointer ml-0" onclick="setCommande(this,139);"><i class="fa fa-home"></i></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between">
+                                            <div class="button-remote text-center">
+                                                <div class="top-button-remote pb-2">
+                                                    <span class="pointer fa-2x"  onclick="setCommande(this,115);">+</span>
+                                                </div>
+                                                <div class="middle-button-remote small pt-2 pb-2">VOL</div>
+                                                <div class="bottom-button-remote pt-2">
+                                                    <span class="pointer fa-2x" onclick="setCommande(this,114);">-</span>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div class="round pointer" onclick="setCommande(this,164);">
+                                                    <i class="fa fa-play"></i>
+                                                </div>
+
+                                                <div class="round pointer bg-white mt-3 mb-1 channel" onclick="setChannel(this,1290);">
+                                                    <img src="/images/channel/beinsport.png" alt="Bein" />
+                                                </div>
+                                            </div>
+                                            <div class="button-remote text-center">
+                                                <div class="top-button-remote pb-2">
+                                                    <span class="pointer fa-2x"  onclick="setCommande(this,402);"><i class="fa fa-chevron-up"></i></span>
+                                                </div>
+                                                <div class="middle-button-remote small pt-2 pb-2">CH</div>
+                                                <div class="bottom-button-remote pt-2">
+                                                    <span class="pointer fa-2x" onclick="setCommande(this,403);"><i class="fa fa-chevron-down"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center">
+                                            <div id="remove-controler" class="grid">
+                                                <div class="up">
+                                                    <i class="fa fa-chevron-up fa-2x pointer" onclick="setCommande(this,103);"></i>
+                                                </div>
+                                                <div class="left">
+                                                    <i class="fa fa-chevron-left fa-2x pointer" onclick="setCommande(this,105);"></i>
+                                                </div>
+                                                <div class="round ok pointer" onclick="setCommande(this,352);">
+                                                    Ok
+                                                </div>
+                                                <div class="right">
+                                                    <i class="fa fa-chevron-right fa-2x pointer" onclick="setCommande(this,106);"></i>
+                                                </div>
+                                                <div class="down">
+                                                    <i class="fa fa-chevron-down fa-2x pointer" onclick="setCommande(this,108);"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+          </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/umd/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

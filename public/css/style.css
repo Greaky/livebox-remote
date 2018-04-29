@@ -1,0 +1,85 @@
+.nowrap { white-space: nowrap;}
+.no-margin {margin: 0;}
+.row.no-margin { padding: 8px;}
+.padding { padding: 15px;}
+.no-padding { padding: 0}
+.text-right { text-align: right;}
+.text-left { text-align: left;}
+.text-center { text-align: center;}
+.v-align { vertical-align: middle;}
+.table.no-border td {border: none;}
+.border-top {border-top:1px solid #eceeef}
+.border-bottom {border-bottom:1px solid #eceeef}
+.weight-200 { font-weight: 200;}
+.pointer, [type=reset], [type=submit], button, html [type=button] { cursor: pointer;}
+.div-loading { filter: blur(3px);}
+
+#remote-tv .grid {
+  display: inline-flex;           /* 1 */
+  flex-flow: row wrap;
+}
+
+#remote-tv .up, #remote-tv .down {
+  flex: 0 0 100%;                 /* 2 */
+  text-align: center;             /* 2 */
+  margin: 15px auto;
+}
+
+#remote-tv .left, #remote-tv .right {
+  flex: 1 0 1%;                   /* 3 */
+  display: flex;
+  margin: auto 15px;
+}
+
+#remote-tv .left  { justify-content: flex-end; }
+#remote-tv .right { justify-content: flex-start; }
+
+#remote-tv .round { margin: auto; width: 40px; border-radius: 100%;text-align: center;padding: 8px 10px; color: #fff; background: #aaaaaa; border: 1px solid #aaaaaa;}
+
+#remote-tv .round.bg-white { color: #000;}
+#remote-tv .channel {width: 80px; padding: 20px 4px;}
+#remote-tv .channel img { max-width: 100%;}
+
+#remote-tv .ok { 
+  border: 1px solid black;
+  background: #FFF;
+  color: #000;
+  padding: 17px 10px;
+  width: 65px;}
+
+#remove-controler {width: 195px;
+  border: 1px solid black;
+  border-radius: 100px;
+  margin: auto;}
+
+.link:hover { text-decoration: underline; cursor: pointer;}
+
+.color-inverse { color :#FFF; background: #4f5f6f;}
+.color-inverse .text-muted { color :#9ba8b5!important;}
+
+.button-remote {width: 50px} 
+
+.table td.small-td { width: 10px; padding: .75rem .2rem;}
+
+.top-button-remote, .bottom-button-remote, .middle-button-remote { 
+  border: 1px solid black;         
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  user-select: none;}
+.top-button-remote {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom: 0;
+}
+.bottom-button-remote {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top: 0;
+}
+.middle-button-remote {border-bottom: 0;border-top: 0;}
+
+.border-bottom-round {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}

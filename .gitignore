@@ -1,0 +1,6 @@
+.DS_STORE
+node_modules/*
+typings/*
+typings.json
+.vscode/
+resource.json
