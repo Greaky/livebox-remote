@@ -39,6 +39,9 @@ npm run start
 Then go to [http://localhost:8888/](http://localhost:8888/)
 
 
+If you want to create a specific button pour a specific channel, you have to find the epgId code in the channels.json files. Complete to epgId to 10 digits with "*". For example, BeinSport epgID is 1290. Then the command is 
+http://your-tv-ip:8080/remoteControl/cmd?operation=09&epg_id=******1290&uui=1
+
 
 
 ![Image of remove tv](https://raw.githubusercontent.com/bbastou/livebox-remote/master/public/images/capture/1.png)
